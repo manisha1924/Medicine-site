@@ -1,0 +1,75 @@
+<html>
+<head>
+<style>
+h1 {
+  text-shadow: 2px 0px;
+}
+body {
+  background-color: lightblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  text-align: center;
+  padding: 3px;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 2% 15% ; 
+  border: 1px solid #888;
+  width: 70%; 
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+.container {
+  padding: 16px;
+}
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+</style>
+</head>
+ <center><h1>Register Here...</h1>
+ <h3>Please fill this form to create an account.</h3></center>
+
+<div id="id01" class="model">
+
+<form class="modal-content" action="reg.html">
+  <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="av.png" alt="Avatar" class="avatar" style="width:30%" height="30%">
+    </div>
+<div class="container">
+ <p>First name:
+        <input type="text"  placeholder="Enter Firstname" name="uname" required></p> 
+<p>Last name:
+        <input type="text" placeholder="Enter Lastname" name="lastname" required></p>
+<p>Email:
+        <input type="text" placeholder="Enter Email "name="email" required></p>
+<p>Create password:
+       <input type="password" placeholder="Enter Password" name="password" required></p>
+<p>Confirm password:
+       <input type="password" placeholder="Re-enter Password" name="password" required></p>
+         <h3><p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <center><button type="submit"><b>Register</b></button></center>
+    <p>Already have an account? <a href="Login.html">Log in</a>.</p></h3>
+  </div>
+    </form>
+</div>
+<center><a href="Home page.html"><h2 style="color:black;">Back</h2></a></center>
+</body>
+</html>

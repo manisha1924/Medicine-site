@@ -1,0 +1,194 @@
+<html>
+<head>
+<title>HOME PAGE</title>
+<style>
+.header {
+  padding: 30px;
+  text-align: center;
+}
+body {
+  background-color: lightblue;
+  font-family: Verdana, sans-serif;
+ }
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  overflow: hidden;
+  padding: 10px;
+  background-color: grey;
+  z-index: 999;
+  margin: 10px;
+}
+.sticky a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+}
+.sticky a:hover {
+  background-color: #ddd;
+  color: black;
+}
+* {
+box-sizing: border-box;
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+.card {
+  background-color: white;
+  padding: 3px;
+  margin-top: 8px;
+}
+p
+{
+text-align: left;
+font-family: calibri;
+}
+h4 {
+text-align: left;
+font-family: calibri;
+}
+#class
+{
+text-shadow: 2px 4px 5px black;
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Welcome To ParaSite!</h1>
+  <h3>Shop Here on Exculsive price!!!</h3>
+<div class="sticky">
+  <a href="about.html">About</a>
+  <a href="product.html">Products</a>
+  <a href="payment.html">Payment</a>
+  <a href="registration.html">Register</a>
+  <a href="Login.html" style="float:right">Login</a>
+</div>
+<div class="slideshow-container">
+<center>
+<div class="mySlides fade">
+  <img src="3.jpg" style="width:60%" height="60%">
+</div>
+
+<div class="mySlides fade">
+  <img src="2.png" style="width:60%" height="60%">
+</div>
+
+<div class="mySlides fade">
+  <img src="1.jpg" style="width:60%" height="60%">
+</div>
+
+<div class="mySlides fade">
+  <img src="4.jpg" style="width:60%" height="60%">
+</div>
+</center>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Homeopathy</h2>
+      <img src= Homo.jpg height= 200px width= 350px>
+      <img src= Homo1.jpg height= 200px width= 350px>
+      <p id=class><b>About...</b></p>
+<p>Homeopathy, also known as homeopathic medicine, is a medical system that was
+developed in Germany more than 200 years ago.Homeopathic products come from
+plants, minerals, or animals. Homeopathic products are often made as sugar
+pellets to be placed under the tongue; they may also be in other forms,
+such as ointments, gels, drops, creams, and tablets.Homeopathy uses a 
+different diagnostic system for assigning treatments to individuals and
+recognizes clinical patterns of signs and symptoms that are different from those of conventional medicine.</p>
+    </div>
+<div>
+
+<div class="leftcolumn">
+    <div class="card">
+      <h2>Allopathy</h2>
+      <img src=Allo.png height= 200px width= 350px>
+      <img src= Allo1.jpg height= 200px width= 350px>
+      <p id=class><b>About...</b></p>
+      <p>The term allopathic medicine was coined in the 1800s to differentiate two types of medicine. At that time, the term allopathic medicine was often used in a derogatory sense and referred to radical treatments such as bleeding people to relieve fever. Allopathic medicine is the term that is used to describe the type of medicine that most people are familiar with, and may also be described as conventional medicine, traditional medicine, or Western medicine. The term is often used to contrast common practices with those of "alternative" medicine or homeopathy.</p>
+    </div>
+</div>
+
+<div class="leftcolumn">
+<div class="card">
+      <h2>Ayurveda</h2>
+      <img src=ayu.jpg height= 200px width= 350px>
+      <img src= Ayu1.jpg height= 200px width= 350px>
+      <p id=class><b>About...</b></p>
+      <p>Ayurveda is an alternative medicine system with historical roots in the Indian subcontinent. The theory and practice of Ayurveda is pseudoscientific. The Indian Medical Association characterises the practice of medicine by Ayurvedic practitioners as quackery. Practitioners will generally use ayurvedic herbs to "cleanse" the body, boost defense against disease, and keep the mind, body, and spirit in balance.More than 600 herbal formulas and 250 single plant remedies are included in the pharmacy of Ayurvedic treatments.</p>
+    </div>
+</div>
+
+
+<div class="leftcolumn">
+  <div class="card">
+      <h2>Naturopathy</h2>
+      <img src=nat.jpg height= 200px width= 350px>
+      <img src= Natu1.jpg height= 200px width= 350px>
+      <p id=class><b>About...</b></p>
+      <p>The term naturopathy was coined in 1895 by John Scheel,and purchased by Benedict Lust, whom naturopaths consider to be the "Father of U.S. Naturopathy".Naturopathy or naturopathic medicine is a form of alternative medicine that employs an array of pseudoscientific practices branded as "natural", "non-invasive", or promoting "self-healing". The ideology and methods of naturopathy are based on vitalism and folk medicine, rather than evidence-based medicine. Naturopathic practitioners generally recommend against following modern medical practices, including but not limited to medical testing, drugs, vaccinations, and surgery.</p>
+    </div>
+ </div>
+</div> 
+ <img src="pp.png" alt="notebook" style="width:100%;">
+</body>
+</html>
